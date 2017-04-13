@@ -97,7 +97,7 @@ locationPlot(data)
 est = KMeans(n_clusters=1000, max_iter=100)
 est.fit(data)
 
-#Record cluster centers and their labels
+#Record cluster centers and their label
 cluster_centers = est.cluster_centers_
 locations = pd.DataFrame(cluster_centers)
 locations['X'] = locations[0]
